@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "maven" # Specifies the ecosystem for Maven projects
+    directory: "/"             # The location of your pom.xml (root directory)
+    schedule:
+      interval: "weekly"       # Dependabot checks for updates weekly (options: daily, weekly, monthly)
+    open-pull-requests-limit: 10 # Limit for the number of open pull requests
+    commit-message:
+      prefix: "[Dep] "         # Custom prefix for commit messages
